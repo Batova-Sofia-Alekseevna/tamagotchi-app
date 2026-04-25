@@ -9,7 +9,9 @@ namespace TamagotchiApp
 
         private void BtnNewGame_Click(object sender, EventArgs e)
         {
-
+            var form = new SettingsForm(this);
+            form.Show();
+            Hide();
         }
 
         private void StartupForm_Load(object sender, EventArgs e)
