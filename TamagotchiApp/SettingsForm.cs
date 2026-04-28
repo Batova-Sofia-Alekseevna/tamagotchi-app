@@ -17,11 +17,13 @@ namespace TamagotchiApp
             InitializeComponent();
             
             _startupForm = startupForm;
+            cbTypes.SelectedIndex = 0;
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
         {
-
+            Close();
+            _startupForm.Show();
         }
 
         private void BtnStart_Click(object sender, EventArgs e)
