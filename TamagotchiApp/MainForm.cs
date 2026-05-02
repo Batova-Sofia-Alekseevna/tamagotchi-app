@@ -5,13 +5,21 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using TamagotchiApp.Pets;
 
 namespace TamagotchiApp
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        private readonly StartupForm _startupForm;
+        private readonly Pet _pet;
+        private int _count = 0;
+
+        public MainForm(Pet pet, StartupForm startupForm)
         {
+            _startupForm = startupForm;
+            _pet = pet;
+
             InitializeComponent();
         }
 

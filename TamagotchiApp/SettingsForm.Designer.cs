@@ -30,7 +30,7 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
+            txtName = new TextBox();
             cbTypes = new ComboBox();
             btnStart = new Button();
             btnBack = new Button();
@@ -54,12 +54,12 @@
             label2.TabIndex = 1;
             label2.Text = "Вид питомца:";
             // 
-            // textBox1
+            // txtName
             // 
-            textBox1.Location = new Point(195, 35);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(572, 39);
-            textBox1.TabIndex = 2;
+            txtName.Location = new Point(195, 35);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(572, 39);
+            txtName.TabIndex = 2;
             // 
             // cbTypes
             // 
@@ -100,7 +100,7 @@
             Controls.Add(btnBack);
             Controls.Add(btnStart);
             Controls.Add(cbTypes);
-            Controls.Add(textBox1);
+            Controls.Add(txtName);
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -117,7 +117,7 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtName;
         private ComboBox cbTypes;
         private Button btnStart;
         private Button btnBack;
