@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TamagotchiApp.Pets
 {
-    public abstract class Pet(string name, double age)
+    public abstract class Pet(string name, double age, PetConfig config)
     {
         /// <summary>
         /// Имя персонажа
@@ -15,6 +15,60 @@ namespace TamagotchiApp.Pets
         /// Возраст персонажа
         /// </summary>
         public double Age { get; private set; } = age;
+
+        /// <summary>
+        /// Здоровье
+        /// </summary>
+        public Stat Health { get; } = new Stat(
+            config.Health.Min,
+            config.Health.Max,
+            config.Health.Value,
+            config.Health.Delta);
+
+        /// <summary>
+        /// Сытость
+        /// </summary>
+        public Stat Satiety { get; } = new Stat(
+            config.Satiety.Min,
+            config.Satiety.Max,
+            config.Satiety.Value,
+            config.Satiety.Delta);
+
+        /// <summary>
+        /// Настроение
+        /// </summary>
+        public Stat Mood { get; } = new Stat(
+            config.Mood.Min,
+            config.Mood.Max,
+            config.Mood.Value,
+            config.Mood.Delta);
+
+        /// <summary>
+        /// Энергия
+        /// </summary>
+        public Stat Energy { get; } = new Stat(
+            config.Energy.Min,
+            config.Energy.Max,
+            config.Energy.Value,
+            config.Energy.Delta);
+
+        /// <summary>
+        /// Дисциплина
+        /// </summary>
+        public Stat Discipline { get; } = new Stat(
+            config.Discipline.Min,
+            config.Discipline.Max,
+            config.Discipline.Value,
+            config.Discipline.Delta);
+
+        /// <summary>
+        /// Гигиена
+        /// </summary>
+        public Stat Hygiene { get; } = new Stat(
+            config.Hygiene.Min,
+            config.Hygiene.Max,
+            config.Hygiene.Value,
+            config.Hygiene.Delta);
 
         /// <summary>
         /// Увеличить возраст

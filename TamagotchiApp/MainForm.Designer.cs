@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel2 = new TableLayoutPanel();
             panel1 = new Panel();
@@ -40,18 +41,19 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            progressBar1 = new ProgressBar();
-            progressBar2 = new ProgressBar();
-            progressBar3 = new ProgressBar();
-            progressBar4 = new ProgressBar();
-            progressBar5 = new ProgressBar();
-            progressBar6 = new ProgressBar();
+            pbHealth = new ProgressBar();
+            pbSatiety = new ProgressBar();
+            pbMood = new ProgressBar();
+            pbEnergy = new ProgressBar();
+            pbDiscipline = new ProgressBar();
+            pbHygiene = new ProgressBar();
             panel2 = new Panel();
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -131,12 +133,12 @@
             tableLayoutPanel3.Controls.Add(label5, 0, 3);
             tableLayoutPanel3.Controls.Add(label6, 0, 4);
             tableLayoutPanel3.Controls.Add(label7, 0, 5);
-            tableLayoutPanel3.Controls.Add(progressBar1, 1, 0);
-            tableLayoutPanel3.Controls.Add(progressBar2, 1, 1);
-            tableLayoutPanel3.Controls.Add(progressBar3, 1, 2);
-            tableLayoutPanel3.Controls.Add(progressBar4, 1, 3);
-            tableLayoutPanel3.Controls.Add(progressBar5, 1, 4);
-            tableLayoutPanel3.Controls.Add(progressBar6, 1, 5);
+            tableLayoutPanel3.Controls.Add(pbHealth, 1, 0);
+            tableLayoutPanel3.Controls.Add(pbSatiety, 1, 1);
+            tableLayoutPanel3.Controls.Add(pbMood, 1, 2);
+            tableLayoutPanel3.Controls.Add(pbEnergy, 1, 3);
+            tableLayoutPanel3.Controls.Add(pbDiscipline, 1, 4);
+            tableLayoutPanel3.Controls.Add(pbHygiene, 1, 5);
             tableLayoutPanel3.Dock = DockStyle.Fill;
             tableLayoutPanel3.Location = new Point(3, 574);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -168,7 +170,7 @@
             label3.Name = "label3";
             label3.Size = new Size(161, 30);
             label3.TabIndex = 1;
-            label3.Text = "Голод";
+            label3.Text = "Сытость";
             // 
             // label4
             // 
@@ -210,53 +212,53 @@
             label7.TabIndex = 5;
             label7.Text = "Гигиена";
             // 
-            // progressBar1
+            // pbHealth
             // 
-            progressBar1.Dock = DockStyle.Fill;
-            progressBar1.Location = new Point(170, 3);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(420, 24);
-            progressBar1.TabIndex = 6;
+            pbHealth.Dock = DockStyle.Fill;
+            pbHealth.Location = new Point(170, 3);
+            pbHealth.Name = "pbHealth";
+            pbHealth.Size = new Size(420, 24);
+            pbHealth.TabIndex = 6;
             // 
-            // progressBar2
+            // pbSatiety
             // 
-            progressBar2.Dock = DockStyle.Fill;
-            progressBar2.Location = new Point(170, 33);
-            progressBar2.Name = "progressBar2";
-            progressBar2.Size = new Size(420, 24);
-            progressBar2.TabIndex = 7;
+            pbSatiety.Dock = DockStyle.Fill;
+            pbSatiety.Location = new Point(170, 33);
+            pbSatiety.Name = "pbSatiety";
+            pbSatiety.Size = new Size(420, 24);
+            pbSatiety.TabIndex = 7;
             // 
-            // progressBar3
+            // pbMood
             // 
-            progressBar3.Dock = DockStyle.Fill;
-            progressBar3.Location = new Point(170, 63);
-            progressBar3.Name = "progressBar3";
-            progressBar3.Size = new Size(420, 24);
-            progressBar3.TabIndex = 8;
+            pbMood.Dock = DockStyle.Fill;
+            pbMood.Location = new Point(170, 63);
+            pbMood.Name = "pbMood";
+            pbMood.Size = new Size(420, 24);
+            pbMood.TabIndex = 8;
             // 
-            // progressBar4
+            // pbEnergy
             // 
-            progressBar4.Dock = DockStyle.Fill;
-            progressBar4.Location = new Point(170, 93);
-            progressBar4.Name = "progressBar4";
-            progressBar4.Size = new Size(420, 24);
-            progressBar4.TabIndex = 9;
+            pbEnergy.Dock = DockStyle.Fill;
+            pbEnergy.Location = new Point(170, 93);
+            pbEnergy.Name = "pbEnergy";
+            pbEnergy.Size = new Size(420, 24);
+            pbEnergy.TabIndex = 9;
             // 
-            // progressBar5
+            // pbDiscipline
             // 
-            progressBar5.Dock = DockStyle.Fill;
-            progressBar5.Location = new Point(170, 123);
-            progressBar5.Name = "progressBar5";
-            progressBar5.Size = new Size(420, 24);
-            progressBar5.TabIndex = 10;
+            pbDiscipline.Dock = DockStyle.Fill;
+            pbDiscipline.Location = new Point(170, 123);
+            pbDiscipline.Name = "pbDiscipline";
+            pbDiscipline.Size = new Size(420, 24);
+            pbDiscipline.TabIndex = 10;
             // 
-            // progressBar6
+            // pbHygiene
             // 
-            progressBar6.Dock = DockStyle.Fill;
-            progressBar6.Location = new Point(170, 153);
-            progressBar6.Name = "progressBar6";
-            progressBar6.Size = new Size(420, 24);
-            progressBar6.TabIndex = 11;
+            pbHygiene.Dock = DockStyle.Fill;
+            pbHygiene.Location = new Point(170, 153);
+            pbHygiene.Name = "pbHygiene";
+            pbHygiene.Size = new Size(420, 24);
+            pbHygiene.TabIndex = 11;
             // 
             // panel2
             // 
@@ -270,7 +272,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(600, 757);
             panel2.TabIndex = 1;
-            panel2.Paint += panel2_Paint;
             // 
             // button5
             // 
@@ -280,7 +281,6 @@
             button5.TabIndex = 4;
             button5.Text = "button5";
             button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
             // 
             // button4
             // 
@@ -318,6 +318,10 @@
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
+            // timer1
+            // 
+            timer1.Tick += Timer1_Tick;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -330,6 +334,7 @@
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Тамагочи";
+            Load += MainForm_Load;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             panel1.ResumeLayout(false);
@@ -355,17 +360,18 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private ProgressBar progressBar1;
-        private ProgressBar progressBar2;
-        private ProgressBar progressBar3;
-        private ProgressBar progressBar4;
-        private ProgressBar progressBar5;
-        private ProgressBar progressBar6;
+        private ProgressBar pbHealth;
+        private ProgressBar pbSatiety;
+        private ProgressBar pbMood;
+        private ProgressBar pbEnergy;
+        private ProgressBar pbDiscipline;
+        private ProgressBar pbHygiene;
         private Panel panel2;
         private Button button5;
         private Button button4;
         private Button button3;
         private Button button2;
         private Button button1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
