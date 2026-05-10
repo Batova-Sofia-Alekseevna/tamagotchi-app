@@ -54,5 +54,20 @@ namespace TamagotchiApp.Pets
             Value = value;
             Delta = delta;
         }
+
+        public void Increase()
+        {
+            Value += Delta;
+        }
+
+        public void Reduce()
+        {
+            Value -= Delta;
+        }
+
+        public void Update(int value)
+        {
+            Value += value;
+        }
     }
 }

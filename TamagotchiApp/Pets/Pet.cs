@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using static System.Windows.Forms.AxHost;
 
 namespace TamagotchiApp.Pets
 {
@@ -82,5 +83,22 @@ namespace TamagotchiApp.Pets
         {
             return $"{Name}, {Age} лет";
         }
+
+        /// <summary>
+        /// Изменить здоровье, питомец может заболеть
+        /// </summary>
+        public virtual void UpdateHealth()
+        {
+            var random = new Random();
+            var maySick = random.NextDouble();
+
+            // Заболел
+            if (maySick > 0.6)
+            {
+                var health = random.Next(0, (Health.Max - Health.Min) / 4);
+                Health.Update(-health);
+            }
+        }
+
     }
 }

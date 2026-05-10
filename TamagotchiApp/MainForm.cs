@@ -27,12 +27,40 @@ namespace TamagotchiApp
         private void Timer1_Tick(object sender, EventArgs e)
         {
             _tickCount++;
+
+            _pet.Discipline.Reduce();
+            _pet.Satiety.Reduce();
+            _pet.Mood.Reduce();
+            _pet.Energy.Reduce();
+            _pet.Hygiene.Reduce();
+
+            pbDiscipline.Value = _pet.Discipline.Value;
+            pbSatiety.Value = _pet.Satiety.Value;
+            pbMood.Value = _pet.Mood.Value;
+            pbEnergy.Value = _pet.Energy.Value;
+            pbHygiene.Value = _pet.Hygiene.Value;
+
+            // Каждые 1000 тиков возраст увеличиваем на 0,2
+            if (_tickCount % 1000 == 0)
+            {
+                _pet.IncreaseAge();
+                lblNameAndAge.Text = _pet.ToString();
+            }
+
+            // Каждые 20 тиков питомец может заболеть
+            if (_tickCount % 20 == 0)
+            {
+                _pet.UpdateHealth();
+                pbHealth.Value = _pet.Health.Value;
+            }
+
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
             timer1.Start();
             ConfigureProgress();
+
         }
 
         private void ConfigureProgress()

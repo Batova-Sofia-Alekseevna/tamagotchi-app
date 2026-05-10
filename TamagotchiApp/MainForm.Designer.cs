@@ -32,7 +32,7 @@
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel2 = new TableLayoutPanel();
             panel1 = new Panel();
-            label1 = new Label();
+            lblNameAndAge = new Label();
             pictureBox1 = new PictureBox();
             tableLayoutPanel3 = new TableLayoutPanel();
             label2 = new Label();
@@ -96,22 +96,22 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(lblNameAndAge);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
             panel1.Size = new Size(593, 54);
             panel1.TabIndex = 0;
             // 
-            // label1
+            // lblNameAndAge
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.Location = new Point(9, 5);
-            label1.Name = "label1";
-            label1.Size = new Size(110, 45);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            lblNameAndAge.AutoSize = true;
+            lblNameAndAge.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            lblNameAndAge.Location = new Point(9, 5);
+            lblNameAndAge.Name = "lblNameAndAge";
+            lblNameAndAge.Size = new Size(110, 45);
+            lblNameAndAge.TabIndex = 0;
+            lblNameAndAge.Text = "label1";
             // 
             // pictureBox1
             // 
@@ -351,7 +351,7 @@
         private TableLayoutPanel tableLayoutPanel1;
         private TableLayoutPanel tableLayoutPanel2;
         private Panel panel1;
-        private Label label1;
+        private Label lblNameAndAge;
         private PictureBox pictureBox1;
         private TableLayoutPanel tableLayoutPanel3;
         private Label label2;
