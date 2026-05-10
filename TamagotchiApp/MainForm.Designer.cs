@@ -88,7 +88,7 @@
             tableLayoutPanel2.RowCount = 3;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 60F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 200F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 186F));
             tableLayoutPanel2.Size = new Size(599, 757);
             tableLayoutPanel2.TabIndex = 0;
             // 
@@ -116,7 +116,7 @@
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Location = new Point(3, 63);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(593, 491);
+            pictureBox1.Size = new Size(593, 505);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
@@ -138,7 +138,7 @@
             tableLayoutPanel3.Controls.Add(progressBar5, 1, 4);
             tableLayoutPanel3.Controls.Add(progressBar6, 1, 5);
             tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Location = new Point(3, 560);
+            tableLayoutPanel3.Location = new Point(3, 574);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 6;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
@@ -147,7 +147,7 @@
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
-            tableLayoutPanel3.Size = new Size(593, 194);
+            tableLayoutPanel3.Size = new Size(593, 180);
             tableLayoutPanel3.TabIndex = 2;
             // 
             // label2
@@ -206,7 +206,7 @@
             label7.Dock = DockStyle.Fill;
             label7.Location = new Point(3, 150);
             label7.Name = "label7";
-            label7.Size = new Size(161, 44);
+            label7.Size = new Size(161, 30);
             label7.TabIndex = 5;
             label7.Text = "Гигиена";
             // 
@@ -255,7 +255,7 @@
             progressBar6.Dock = DockStyle.Fill;
             progressBar6.Location = new Point(170, 153);
             progressBar6.Name = "progressBar6";
-            progressBar6.Size = new Size(420, 38);
+            progressBar6.Size = new Size(420, 24);
             progressBar6.TabIndex = 11;
             // 
             // panel2
