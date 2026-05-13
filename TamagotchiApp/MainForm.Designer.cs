@@ -33,7 +33,7 @@
             tableLayoutPanel2 = new TableLayoutPanel();
             panel1 = new Panel();
             lblNameAndAge = new Label();
-            pictureBox1 = new PictureBox();
+            pbImage = new PictureBox();
             tableLayoutPanel3 = new TableLayoutPanel();
             label2 = new Label();
             label3 = new Label();
@@ -57,7 +57,7 @@
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbImage).BeginInit();
             tableLayoutPanel3.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -82,7 +82,7 @@
             tableLayoutPanel2.ColumnCount = 1;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel2.Controls.Add(panel1, 0, 0);
-            tableLayoutPanel2.Controls.Add(pictureBox1, 0, 1);
+            tableLayoutPanel2.Controls.Add(pbImage, 0, 1);
             tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 0, 2);
             tableLayoutPanel2.Dock = DockStyle.Fill;
             tableLayoutPanel2.Location = new Point(3, 3);
@@ -113,14 +113,15 @@
             lblNameAndAge.TabIndex = 0;
             lblNameAndAge.Text = "label1";
             // 
-            // pictureBox1
+            // pbImage
             // 
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Location = new Point(3, 63);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(593, 505);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            pbImage.BackgroundImageLayout = ImageLayout.Stretch;
+            pbImage.Dock = DockStyle.Fill;
+            pbImage.Location = new Point(3, 63);
+            pbImage.Name = "pbImage";
+            pbImage.Size = new Size(593, 505);
+            pbImage.TabIndex = 1;
+            pbImage.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
@@ -326,6 +327,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1211, 763);
             Controls.Add(tableLayoutPanel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -334,12 +336,13 @@
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Тамагочи";
+            FormClosed += MainForm_FormClosed;
             Load += MainForm_Load;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbImage).EndInit();
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel3.PerformLayout();
             panel2.ResumeLayout(false);
@@ -352,7 +355,7 @@
         private TableLayoutPanel tableLayoutPanel2;
         private Panel panel1;
         private Label lblNameAndAge;
-        private PictureBox pictureBox1;
+        private PictureBox pbImage;
         private TableLayoutPanel tableLayoutPanel3;
         private Label label2;
         private Label label3;

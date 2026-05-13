@@ -54,6 +54,8 @@ namespace TamagotchiApp
                 pbHealth.Value = _pet.Health.Value;
             }
 
+            _pet.UpdateState();
+            pbImage.BackgroundImage = _pet.Images[_pet.State];
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -90,5 +92,9 @@ namespace TamagotchiApp
             pbHygiene.Value = _pet.Hygiene.Value;
         }
 
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _startupForm.Close();
+        }
     }
 }

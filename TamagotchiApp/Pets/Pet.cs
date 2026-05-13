@@ -18,6 +18,16 @@ namespace TamagotchiApp.Pets
         public double Age { get; private set; } = age;
 
         /// <summary>
+        /// Состояние питомца
+        /// </summary>
+        public PetState State { get; private set; } = PetState.Base;
+        
+        /// <summary>
+        /// Изображение питомца
+        /// </summary>
+        public abstract Dictionary<PetState, Image> Images { get; }
+
+        /// <summary>
         /// Здоровье
         /// </summary>
         public Stat Health { get; } = new Stat(
@@ -100,5 +110,13 @@ namespace TamagotchiApp.Pets
             }
         }
 
+        public virtual void UpdateState()
+        {
+            if (Health.Value != Health.Max)
+            {
+                State = PetState.Sick;
+                return;
+            }
+        }
     }
 }
