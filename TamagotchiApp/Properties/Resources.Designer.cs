@@ -63,6 +63,16 @@ namespace TamagotchiApp.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ball {
+            get {
+                object obj = ResourceManager.GetObject("ball", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cat_angry {
             get {
                 object obj = ResourceManager.GetObject("cat-angry", resourceCulture);
@@ -146,6 +156,16 @@ namespace TamagotchiApp.Properties {
         internal static System.Drawing.Bitmap cat_sleeping {
             get {
                 object obj = ResourceManager.GetObject("cat-sleeping", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap catch_up {
+            get {
+                object obj = ResourceManager.GetObject("catch up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -416,6 +436,16 @@ namespace TamagotchiApp.Properties {
         internal static System.Drawing.Bitmap parrot_sleeping {
             get {
                 object obj = ResourceManager.GetObject("parrot-sleeping", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wand {
+            get {
+                object obj = ResourceManager.GetObject("wand", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

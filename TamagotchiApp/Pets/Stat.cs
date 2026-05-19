@@ -60,6 +60,11 @@ namespace TamagotchiApp.Pets
             Value += Delta;
         }
 
+        public void SetMax()
+        {
+            Value = Max;
+        }
+
         public void Reduce()
         {
             Value -= Delta;

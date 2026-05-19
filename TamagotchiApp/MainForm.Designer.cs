@@ -49,10 +49,10 @@
             pbHygiene = new ProgressBar();
             panel2 = new Panel();
             button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            btnPlay = new Button();
+            btnStroke = new Button();
+            btnHeal = new Button();
+            btnClean = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -264,10 +264,10 @@
             // panel2
             // 
             panel2.Controls.Add(button5);
-            panel2.Controls.Add(button4);
-            panel2.Controls.Add(button3);
-            panel2.Controls.Add(button2);
-            panel2.Controls.Add(button1);
+            panel2.Controls.Add(btnPlay);
+            panel2.Controls.Add(btnStroke);
+            panel2.Controls.Add(btnHeal);
+            panel2.Controls.Add(btnClean);
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(608, 3);
             panel2.Name = "panel2";
@@ -283,41 +283,45 @@
             button5.Text = "button5";
             button5.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnPlay
             // 
-            button4.Location = new Point(24, 291);
-            button4.Name = "button4";
-            button4.Size = new Size(554, 58);
-            button4.TabIndex = 3;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
+            btnPlay.Location = new Point(24, 291);
+            btnPlay.Name = "btnPlay";
+            btnPlay.Size = new Size(554, 58);
+            btnPlay.TabIndex = 3;
+            btnPlay.Text = "Играть";
+            btnPlay.UseVisualStyleBackColor = true;
+            btnPlay.Click += BtnPlay_Click;
             // 
-            // button3
+            // btnStroke
             // 
-            button3.Location = new Point(24, 198);
-            button3.Name = "button3";
-            button3.Size = new Size(554, 58);
-            button3.TabIndex = 2;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            btnStroke.Location = new Point(24, 198);
+            btnStroke.Name = "btnStroke";
+            btnStroke.Size = new Size(554, 58);
+            btnStroke.TabIndex = 2;
+            btnStroke.Text = "Погладить";
+            btnStroke.UseVisualStyleBackColor = true;
+            btnStroke.Click += BtnStroke_Click;
             // 
-            // button2
+            // btnHeal
             // 
-            button2.Location = new Point(24, 105);
-            button2.Name = "button2";
-            button2.Size = new Size(554, 58);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btnHeal.Location = new Point(24, 105);
+            btnHeal.Name = "btnHeal";
+            btnHeal.Size = new Size(554, 58);
+            btnHeal.TabIndex = 1;
+            btnHeal.Text = "Лечить";
+            btnHeal.UseVisualStyleBackColor = true;
+            btnHeal.Click += BtnHeal_Click;
             // 
-            // button1
+            // btnClean
             // 
-            button1.Location = new Point(24, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(554, 58);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnClean.Location = new Point(24, 12);
+            btnClean.Name = "btnClean";
+            btnClean.Size = new Size(554, 58);
+            btnClean.TabIndex = 0;
+            btnClean.Text = "Навести порядок";
+            btnClean.UseVisualStyleBackColor = true;
+            btnClean.Click += BtnClean_Click;
             // 
             // timer1
             // 
@@ -371,10 +375,10 @@
         private ProgressBar pbHygiene;
         private Panel panel2;
         private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private Button btnPlay;
+        private Button btnStroke;
+        private Button btnHeal;
+        private Button btnClean;
         private System.Windows.Forms.Timer timer1;
     }
 }

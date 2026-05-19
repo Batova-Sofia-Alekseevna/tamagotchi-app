@@ -98,5 +98,29 @@ namespace TamagotchiApp
         {
             _startupForm.Close();
         }
+
+        private void BtnClean_Click(object sender, EventArgs e)
+        {
+            _pet.Hygiene.SetMax();
+            pbHygiene.Value = _pet.Hygiene.Value;
+        }
+
+        private void BtnHeal_Click(object sender, EventArgs e)
+        {
+            _pet.Health.SetMax();
+            pbHealth.Value = _pet.Health.Value;
+        }
+
+        private void BtnStroke_Click(object sender, EventArgs e)
+        {
+            _pet.Mood.SetMax();
+            pbMood.Value = _pet.Mood.Value;
+        }
+
+        private void BtnPlay_Click(object sender, EventArgs e)
+        {
+            var form = new PlayForm();
+            form.ShowDialog();
+        }
     }
 }
