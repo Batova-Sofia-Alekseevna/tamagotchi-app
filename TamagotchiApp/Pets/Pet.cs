@@ -23,6 +23,11 @@ namespace TamagotchiApp.Pets
         /// Состояние питомца
         /// </summary>
         public PetState State { get; private set; } = PetState.Base;
+        
+        /// <summary>
+        /// Вид животного
+        /// </summary>
+        public abstract PetType Type { get; }
 
         /// <summary>
         /// Изображение питомца

@@ -15,5 +15,6 @@
   { PetState.Sick, Properties.Resources.cat_sick}
 };
 
+        public override PetType Type => PetType.Cat;
     }
 }

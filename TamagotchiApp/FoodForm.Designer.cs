@@ -77,6 +77,7 @@
             Name = "FoodForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Выберите еду:";
+            Load += FoodForm_Load;
             ResumeLayout(false);
         }
 

@@ -14,5 +14,6 @@
   { PetState.Enamored, Properties.Resources.hamster_enamored},
   { PetState.Sick, Properties.Resources.hamster_sick}
 };
+        public override PetType Type => PetType.Hamster;
     }
 }
