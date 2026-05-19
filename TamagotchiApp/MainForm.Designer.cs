@@ -48,7 +48,7 @@
             pbDiscipline = new ProgressBar();
             pbHygiene = new ProgressBar();
             panel2 = new Panel();
-            button5 = new Button();
+            btnFeed = new Button();
             btnPlay = new Button();
             btnStroke = new Button();
             btnHeal = new Button();
@@ -263,7 +263,7 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(button5);
+            panel2.Controls.Add(btnFeed);
             panel2.Controls.Add(btnPlay);
             panel2.Controls.Add(btnStroke);
             panel2.Controls.Add(btnHeal);
@@ -274,14 +274,14 @@
             panel2.Size = new Size(600, 757);
             panel2.TabIndex = 1;
             // 
-            // button5
+            // btnFeed
             // 
-            button5.Location = new Point(24, 384);
-            button5.Name = "button5";
-            button5.Size = new Size(554, 58);
-            button5.TabIndex = 4;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
+            btnFeed.Location = new Point(24, 384);
+            btnFeed.Name = "btnFeed";
+            btnFeed.Size = new Size(554, 58);
+            btnFeed.TabIndex = 4;
+            btnFeed.Text = "Кормить";
+            btnFeed.UseVisualStyleBackColor = true;
             // 
             // btnPlay
             // 
@@ -374,7 +374,7 @@
         private ProgressBar pbDiscipline;
         private ProgressBar pbHygiene;
         private Panel panel2;
-        private Button button5;
+        private Button btnFeed;
         private Button btnPlay;
         private Button btnStroke;
         private Button btnHeal;

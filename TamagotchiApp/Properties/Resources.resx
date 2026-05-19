@@ -139,6 +139,9 @@
   <data name="parrot-sad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\parrot-sad.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="корм" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\корм.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cat-sad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat-sad.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,8 +151,14 @@
   <data name="dog-sick" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dog-sick.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="лакомство" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\лакомство.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="назад" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\назад.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dog-enamored" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dog-enamored.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hamster-enamored" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hamster-enamored.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -171,9 +180,6 @@
   </data>
   <data name="wand" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wand.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hamster-crying" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hamster-crying.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cat-crying" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat-crying.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,8 +229,8 @@
   <data name="parrot-singing" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\parrot-singing.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dog-enamored" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dog-enamored.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hamster-crying" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hamster-crying.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="parrot-angry" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\parrot-angry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,10 +247,13 @@
   <data name="dog-singing" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dog-singing.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="catch up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catch up.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hamster-sick" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hamster-sick.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="catch up" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\catch up.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="мясо" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\мясо.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
