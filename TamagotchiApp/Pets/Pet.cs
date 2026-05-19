@@ -7,6 +7,8 @@ namespace TamagotchiApp.Pets
 {
     public abstract class Pet(string name, double age, PetConfig config)
     {
+        private bool _isSleeping = false;
+
         /// <summary>
         /// Имя персонажа
         /// </summary>
@@ -21,7 +23,7 @@ namespace TamagotchiApp.Pets
         /// Состояние питомца
         /// </summary>
         public PetState State { get; private set; } = PetState.Base;
-        
+
         /// <summary>
         /// Изображение питомца
         /// </summary>
@@ -110,13 +112,83 @@ namespace TamagotchiApp.Pets
             }
         }
 
+        /// <summary>
+        /// Обновить состояние
+        /// </summary>
         public virtual void UpdateState()
         {
+            if (_isSleeping)
+            {
+                State = PetState.Sleeping;
+                return;
+            }
+
             if (Health.Value != Health.Max)
             {
                 State = PetState.Sick;
                 return;
             }
+
+            if (Satiety.Value < Satiety.Max * 0.5)
+            {
+                State = PetState.Angry;
+                return;
+            }
+
+            State = Mood.Value switch
+            {
+                var value when value > Mood.Max * 0.8 => PetState.Singing,
+                var value when value > Mood.Max * 0.6 => PetState.Enamored,
+                var value when value > Mood.Max * 0.4 => PetState.Happy,
+                var value when value > Mood.Max * 0.2 => PetState.Sad,
+                _ => PetState.Crying
+            };
+        }
+
+        public virtual void Sleep()
+        {
+            if (_isSleeping)
+            {
+                if (Energy.Value != Energy.Max)
+                {
+                    Energy.Increase();
+                }
+                else
+                {
+                    WakeUp();
+                }
+            }
+        }
+
+        public virtual void StayAwake()
+        {
+            if (!_isSleeping)
+            {
+                if (Energy.Value < Energy.Max*0.2)             
+                {
+                    FallAsleep();
+                }
+                else
+                {
+                    Energy.Reduce();
+                }
+            }
+        }
+
+        /// <summary>
+        /// Проснуться
+        /// </summary>
+        private void WakeUp()
+        {
+            _isSleeping = false;
+        }
+
+        /// <summary>
+        /// Заснуть
+        /// </summary>
+        private void FallAsleep()
+        {
+            _isSleeping = true;
         }
     }
 }

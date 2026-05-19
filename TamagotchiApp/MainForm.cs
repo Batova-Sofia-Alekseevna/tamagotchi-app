@@ -31,8 +31,9 @@ namespace TamagotchiApp
             _pet.Discipline.Reduce();
             _pet.Satiety.Reduce();
             _pet.Mood.Reduce();
-            _pet.Energy.Reduce();
             _pet.Hygiene.Reduce();
+            _pet.Sleep();
+            _pet.StayAwake();
 
             pbDiscipline.Value = _pet.Discipline.Value;
             pbSatiety.Value = _pet.Satiety.Value;
@@ -47,8 +48,8 @@ namespace TamagotchiApp
                 lblNameAndAge.Text = _pet.ToString();
             }
 
-            // Каждые 20 тиков питомец может заболеть
-            if (_tickCount % 20 == 0)
+            // Каждые 2000 тиков питомец может заболеть
+            if (_tickCount % 2000 == 0)
             {
                 _pet.UpdateHealth();
                 pbHealth.Value = _pet.Health.Value;
@@ -60,6 +61,7 @@ namespace TamagotchiApp
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            lblNameAndAge.Text = _pet.ToString();
             timer1.Start();
             ConfigureProgress();
 
