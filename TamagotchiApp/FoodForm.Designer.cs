@@ -28,49 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnDryFood = new Button();
-            btnTreat = new Button();
-            btnMeat = new Button();
+            btnFood1 = new Button();
+            btnFood2 = new Button();
+            btnFood3 = new Button();
             SuspendLayout();
             // 
-            // btnDryFood
+            // btnFood1
             // 
-            btnDryFood.BackgroundImage = Properties.Resources.корм;
-            btnDryFood.BackgroundImageLayout = ImageLayout.Stretch;
-            btnDryFood.Location = new Point(33, 34);
-            btnDryFood.Name = "btnDryFood";
-            btnDryFood.Size = new Size(200, 200);
-            btnDryFood.TabIndex = 0;
-            btnDryFood.UseVisualStyleBackColor = true;
+            btnFood1.BackgroundImageLayout = ImageLayout.Stretch;
+            btnFood1.Location = new Point(33, 34);
+            btnFood1.Name = "btnFood1";
+            btnFood1.Size = new Size(200, 200);
+            btnFood1.TabIndex = 0;
+            btnFood1.UseVisualStyleBackColor = true;
+            btnFood1.Click += BtnFood1_Click;
             // 
-            // btnTreat
+            // btnFood2
             // 
-            btnTreat.BackgroundImage = Properties.Resources.лакомство;
-            btnTreat.BackgroundImageLayout = ImageLayout.Stretch;
-            btnTreat.Location = new Point(286, 34);
-            btnTreat.Name = "btnTreat";
-            btnTreat.Size = new Size(200, 200);
-            btnTreat.TabIndex = 1;
-            btnTreat.UseVisualStyleBackColor = true;
+            btnFood2.BackgroundImageLayout = ImageLayout.Stretch;
+            btnFood2.Location = new Point(286, 34);
+            btnFood2.Name = "btnFood2";
+            btnFood2.Size = new Size(200, 200);
+            btnFood2.TabIndex = 1;
+            btnFood2.UseVisualStyleBackColor = true;
+            btnFood2.Click += BtnFood2_Click;
             // 
-            // btnMeat
+            // btnFood3
             // 
-            btnMeat.BackgroundImage = Properties.Resources.мясо;
-            btnMeat.BackgroundImageLayout = ImageLayout.Stretch;
-            btnMeat.Location = new Point(543, 34);
-            btnMeat.Name = "btnMeat";
-            btnMeat.Size = new Size(200, 200);
-            btnMeat.TabIndex = 2;
-            btnMeat.UseVisualStyleBackColor = true;
+            btnFood3.BackgroundImageLayout = ImageLayout.Stretch;
+            btnFood3.Location = new Point(543, 34);
+            btnFood3.Name = "btnFood3";
+            btnFood3.Size = new Size(200, 200);
+            btnFood3.TabIndex = 2;
+            btnFood3.UseVisualStyleBackColor = true;
+            btnFood3.Click += BtnFood3_Click;
             // 
             // FoodForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(779, 275);
-            Controls.Add(btnMeat);
-            Controls.Add(btnTreat);
-            Controls.Add(btnDryFood);
+            Controls.Add(btnFood3);
+            Controls.Add(btnFood2);
+            Controls.Add(btnFood1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
@@ -83,8 +83,8 @@
 
         #endregion
 
-        private Button btnDryFood;
-        private Button btnTreat;
-        private Button btnMeat;
+        private Button btnFood1;
+        private Button btnFood2;
+        private Button btnFood3;
     }
 }

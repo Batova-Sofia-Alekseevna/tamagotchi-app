@@ -463,6 +463,86 @@ namespace TamagotchiApp.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap игрушка_кошка {
+            get {
+                object obj = ResourceManager.GetObject("игрушка кошка", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap игрушка_кошка_2 {
+            get {
+                object obj = ResourceManager.GetObject("игрушка кошка 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap игрушка_попугай {
+            get {
+                object obj = ResourceManager.GetObject("игрушка попугай", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap игрушка_попугай_2 {
+            get {
+                object obj = ResourceManager.GetObject("игрушка попугай 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap игрушка_попугай_3 {
+            get {
+                object obj = ResourceManager.GetObject("игрушка попугай 3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap игрушка_хомяк {
+            get {
+                object obj = ResourceManager.GetObject("игрушка хомяк", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap игрушка_хомяк_2 {
+            get {
+                object obj = ResourceManager.GetObject("игрушка хомяк 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap игрушка_хомяк_3 {
+            get {
+                object obj = ResourceManager.GetObject("игрушка хомяк 3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap корм {
             get {
                 object obj = ResourceManager.GetObject("корм", resourceCulture);
@@ -473,9 +553,49 @@ namespace TamagotchiApp.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap корм_хомяк {
+            get {
+                object obj = ResourceManager.GetObject("корм хомяк", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap лакомство {
             get {
                 object obj = ResourceManager.GetObject("лакомство", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap лакомство_кошка {
+            get {
+                object obj = ResourceManager.GetObject("лакомство кошка", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap лакомство_попугай {
+            get {
+                object obj = ResourceManager.GetObject("лакомство попугай", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap лакомство_хомяк {
+            get {
+                object obj = ResourceManager.GetObject("лакомство хомяк", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -516,6 +636,26 @@ namespace TamagotchiApp.Properties {
         internal static System.Drawing.Bitmap начало {
             get {
                 object obj = ResourceManager.GetObject("начало", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap трава_кошка {
+            get {
+                object obj = ResourceManager.GetObject("трава кошка", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap трава_хомяк {
+            get {
+                object obj = ResourceManager.GetObject("трава хомяк", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

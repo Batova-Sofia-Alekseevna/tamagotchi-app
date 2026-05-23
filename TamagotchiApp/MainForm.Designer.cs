@@ -282,6 +282,7 @@
             btnFeed.TabIndex = 4;
             btnFeed.Text = "Кормить";
             btnFeed.UseVisualStyleBackColor = true;
+            btnFeed.Click += BtnFeed_Click;
             // 
             // btnPlay
             // 

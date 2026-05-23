@@ -119,8 +119,33 @@ namespace TamagotchiApp
 
         private void BtnPlay_Click(object sender, EventArgs e)
         {
-            var form = new PlayForm();
+            var form = new PlayForm(_pet);
+            form.Played += OnPetPlayed;
             form.ShowDialog();
+            form.Played -= OnPetPlayed;
+        }
+
+        private void OnPetPlayed()
+        {
+            MessageBox.Show($"Здорово поиграли!! Настроение +{_pet.Mood.Max * 0.2:F0}", "Результат игры", MessageBoxButtons.OK,MessageBoxIcon.Information);
+            _pet.Mood.Update((int)(_pet.Mood.Max * 0.2));
+            _pet.Energy.Update((int)(-_pet.Energy.Max * 0.1));
+        }
+
+        private void BtnFeed_Click(object sender, EventArgs e)
+        {
+            var form = new FoodForm(_pet);
+            form.Fed += OnPetFed;
+            form.ShowDialog();
+            form.Fed -= OnPetFed;
+        }
+
+        private void OnPetFed()
+        {
+            MessageBox.Show($"Здорово поели!! Настроение +{_pet.Mood.Max * 0.15:F0}", "Результат игры", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            _pet.Mood.Update((int)(_pet.Mood.Max * 0.15));
+            _pet.Energy.Update((int)(-_pet.Energy.Max * 0.1));
+            _pet.Satiety.IncreaseMax();
         }
     }
 }

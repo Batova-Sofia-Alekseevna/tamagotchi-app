@@ -28,65 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnWand = new Button();
-            btnCatchUp = new Button();
-            btnBall = new Button();
+            btnPlay1 = new Button();
+            btnPlay3 = new Button();
+            btnPlay2 = new Button();
             SuspendLayout();
             // 
-            // btnWand
+            // btnPlay1
             // 
-            btnWand.BackgroundImage = Properties.Resources.wand;
-            btnWand.BackgroundImageLayout = ImageLayout.Stretch;
-            btnWand.Location = new Point(44, 31);
-            btnWand.Name = "btnWand";
-            btnWand.Size = new Size(200, 200);
-            btnWand.TabIndex = 0;
-            btnWand.UseVisualStyleBackColor = true;
-            btnWand.Click += BtnWand_Click;
+            btnPlay1.BackgroundImageLayout = ImageLayout.Stretch;
+            btnPlay1.Location = new Point(44, 31);
+            btnPlay1.Name = "btnPlay1";
+            btnPlay1.Size = new Size(200, 200);
+            btnPlay1.TabIndex = 0;
+            btnPlay1.UseVisualStyleBackColor = true;
+            btnPlay1.Click += BtnPlay1_Click;
             // 
-            // btnCatchUp
+            // btnPlay3
             // 
-            btnCatchUp.BackgroundImage = Properties.Resources.catch_up;
-            btnCatchUp.BackgroundImageLayout = ImageLayout.Stretch;
-            btnCatchUp.Location = new Point(546, 31);
-            btnCatchUp.Name = "btnCatchUp";
-            btnCatchUp.Size = new Size(200, 200);
-            btnCatchUp.TabIndex = 0;
-            btnCatchUp.UseVisualStyleBackColor = true;
-            btnCatchUp.Click += BtnCatchUp_Click;
+            btnPlay3.BackgroundImageLayout = ImageLayout.Stretch;
+            btnPlay3.Location = new Point(546, 31);
+            btnPlay3.Name = "btnPlay3";
+            btnPlay3.Size = new Size(200, 200);
+            btnPlay3.TabIndex = 0;
+            btnPlay3.UseVisualStyleBackColor = true;
+            btnPlay3.Click += BtnPlay3_Click;
             // 
-            // btnBall
+            // btnPlay2
             // 
-            btnBall.BackgroundImage = Properties.Resources.ball;
-            btnBall.BackgroundImageLayout = ImageLayout.Stretch;
-            btnBall.Location = new Point(296, 31);
-            btnBall.Name = "btnBall";
-            btnBall.Size = new Size(200, 200);
-            btnBall.TabIndex = 0;
-            btnBall.UseVisualStyleBackColor = true;
-            btnBall.Click += BtnBall_Click;
+            btnPlay2.BackgroundImageLayout = ImageLayout.Stretch;
+            btnPlay2.Location = new Point(296, 31);
+            btnPlay2.Name = "btnPlay2";
+            btnPlay2.Size = new Size(200, 200);
+            btnPlay2.TabIndex = 0;
+            btnPlay2.UseVisualStyleBackColor = true;
+            btnPlay2.Click += BtnPlay2_Click;
             // 
             // PlayForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(788, 261);
-            Controls.Add(btnBall);
-            Controls.Add(btnCatchUp);
-            Controls.Add(btnWand);
+            Controls.Add(btnPlay2);
+            Controls.Add(btnPlay3);
+            Controls.Add(btnPlay1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "PlayForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Выберите игру:";
+            Load += PlayForm_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button btnWand;
-        private Button btnCatchUp;
-        private Button btnBall;
+        private Button btnPlay1;
+        private Button btnPlay3;
+        private Button btnPlay2;
     }
 }

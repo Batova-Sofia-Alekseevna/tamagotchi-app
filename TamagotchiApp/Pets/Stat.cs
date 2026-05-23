@@ -74,5 +74,10 @@ namespace TamagotchiApp.Pets
         {
             Value += value;
         }
+
+        public void IncreaseMax()
+        {
+            Value = Max;
+        }
     }
 }
