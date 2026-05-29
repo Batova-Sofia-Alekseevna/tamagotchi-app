@@ -54,6 +54,7 @@
             btnHeal = new Button();
             btnClean = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
+            btnLearn = new Button();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -263,6 +264,7 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(btnLearn);
             panel2.Controls.Add(btnFeed);
             panel2.Controls.Add(btnPlay);
             panel2.Controls.Add(btnStroke);
@@ -328,6 +330,16 @@
             // 
             timer1.Tick += Timer1_Tick;
             // 
+            // btnLearn
+            // 
+            btnLearn.Location = new Point(24, 471);
+            btnLearn.Name = "btnLearn";
+            btnLearn.Size = new Size(554, 58);
+            btnLearn.TabIndex = 5;
+            btnLearn.Text = "Учить";
+            btnLearn.UseVisualStyleBackColor = true;
+            btnLearn.Click += BtnLearn_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -381,5 +393,6 @@
         private Button btnHeal;
         private Button btnClean;
         private System.Windows.Forms.Timer timer1;
+        private Button btnLearn;
     }
 }

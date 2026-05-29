@@ -1,0 +1,16 @@
+﻿using System.Drawing.Drawing2D;
+
+namespace TamagotchiApp.JapaneseCrossing
+{
+    public class Father : Person
+    {
+        public Father(int leftX, int leftY, int rightX, int rightY)
+            : base(leftX, leftY, rightX, rightY)
+        {
+        }
+
+        public override Bitmap Image => Properties.Resources.father;
+        public override string Name => "Отец";
+        public override bool CanOperateBoat => true;
+    }
+}

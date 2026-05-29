@@ -48,8 +48,8 @@ namespace TamagotchiApp
                 lblNameAndAge.Text = _pet.ToString();
             }
 
-            // Каждые 2000 тиков питомец может заболеть
-            if (_tickCount % 2000 == 0)
+            // Каждые 300 тиков питомец может заболеть
+            if (_tickCount % 300 == 0)
             {
                 _pet.UpdateHealth();
                 pbHealth.Value = _pet.Health.Value;
@@ -109,12 +109,14 @@ namespace TamagotchiApp
         {
             _pet.Health.SetMax();
             pbHealth.Value = _pet.Health.Value;
+            MessageBox.Show($"Я полностью здоров!", "Результат лечения", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void BtnStroke_Click(object sender, EventArgs e)
         {
             _pet.Mood.SetMax();
             pbMood.Value = _pet.Mood.Value;
+            MessageBox.Show($"Я счастлив!", "Результат поглаживания)", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void BtnPlay_Click(object sender, EventArgs e)
@@ -127,7 +129,7 @@ namespace TamagotchiApp
 
         private void OnPetPlayed()
         {
-            MessageBox.Show($"Здорово поиграли!! Настроение +{_pet.Mood.Max * 0.2:F0}", "Результат игры", MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show($"Здорово поиграли!! Настроение +{_pet.Mood.Max * 0.2:F0}", "Результат игры", MessageBoxButtons.OK, MessageBoxIcon.Information);
             _pet.Mood.Update((int)(_pet.Mood.Max * 0.2));
             _pet.Energy.Update((int)(-_pet.Energy.Max * 0.1));
         }
@@ -146,6 +148,12 @@ namespace TamagotchiApp
             _pet.Mood.Update((int)(_pet.Mood.Max * 0.15));
             _pet.Energy.Update((int)(-_pet.Energy.Max * 0.1));
             _pet.Satiety.IncreaseMax();
+        }
+
+        private void BtnLearn_Click(object sender, EventArgs e)
+        {
+            var form = new MiniGameForm();
+            form.ShowDialog();
         }
     }
 }

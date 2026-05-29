@@ -1,4 +1,4 @@
-﻿namespace TamagotchiApp.Pets
+﻿namespace TamagotchiApp.Pets.Animals
 {
     public class Dog(string name, double age) : Pet(name, age, PetConfigPresets.Dog)
     {

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using TamagotchiApp.Pets;
+using TamagotchiApp.Pets.Animals;
 
 namespace TamagotchiApp
 {

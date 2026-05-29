@@ -1,0 +1,18 @@
+﻿using System.Drawing.Drawing2D;
+using static System.Net.Mime.MediaTypeNames;
+
+namespace TamagotchiApp.JapaneseCrossing
+{
+    public class Police : Person
+    {
+        public Police(int leftX, int leftY, int rightX, int rightY)
+            : base(leftX, leftY, rightX, rightY)
+        {
+        }
+
+        public override string Name => "Полицейский";
+        public override bool CanOperateBoat => true;
+
+        public override Bitmap Image => Properties.Resources.police;
+    }
+}
