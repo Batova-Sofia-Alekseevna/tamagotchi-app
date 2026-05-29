@@ -36,6 +36,10 @@
             buttonToLeft = new Button();
             SuspendLayout();
             // 
+            // timer1
+            // 
+            timer1.Tick += Timer1_Tick;
+            // 
             // textBoxProcess
             // 
             textBoxProcess.Location = new Point(617, 1);
@@ -74,7 +78,12 @@
             Controls.Add(buttonToLeft);
             Controls.Add(buttonToRight);
             Controls.Add(textBoxProcess);
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "MiniGameForm";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Мини-игра: Японская переправа";
             Paint += MiniGameForm_Paint;
             MouseDown += MiniGameForm_MouseDown;
