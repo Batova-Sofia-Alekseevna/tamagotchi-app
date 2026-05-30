@@ -4,19 +4,19 @@ namespace TamagotchiApp.JapaneseCrossing
 {
     public class Game
     {
-        private SideKind? _targetSide;
+        private SideKind? _targetSide;    //сторона куда переправляемся
 
         public Game()
         {
-            Passengers = CreatePassengers();
+            Passengers = CreatePassengers();   //задаем персонажей
 
-            LeftSide = new RiverSide(SideKind.Left);
-            RightSide = new RiverSide(SideKind.Right);
+            LeftSide = new RiverSide(SideKind.Left);   //левый берег
+            RightSide = new RiverSide(SideKind.Right); //правый берег
 
-            LeftSide.AddRange(Passengers);
+            LeftSide.AddRange(Passengers);  //старт на левом берегу
 
-            Boat = new Boat(
-                GameConstants.BoatLeftX,
+            Boat = new Boat(   //создаем лодку
+                GameConstants.BoatLeftX,  //коорд х и у
                 GameConstants.BoatY);
         }
 
@@ -26,22 +26,22 @@ namespace TamagotchiApp.JapaneseCrossing
 
         public Boat Boat { get; }
 
-        public List<Person> Passengers { get; }
+        public List<Person> Passengers { get; }  //свойство персонажей, список
 
-        public int MoveCount { get; private set; }
+        public int MoveCount { get; private set; }  //кол-во ходов
 
-        public SideKind ActiveSide =>
+        public SideKind ActiveSide =>  //сейчас находимся
             Boat.IsOnLeftSide
                 ? SideKind.Left
                 : SideKind.Right;
 
-        public bool IsAnimationRunning { get; private set; }
+        public bool IsAnimationRunning { get; private set; }  //включена анимация
 
-        public bool IsSuccess =>
+        public bool IsSuccess =>    //если нет пассажиров на лев берегу и в лодке-игра закончена
             LeftSide.Passengers.Count == 0 &&
             Boat.Passengers.Count == 0;
 
-        public void Embark(Person person)
+        public void Embark(Person person)   //посадить в лодку
         {
             if (IsAnimationRunning)
                 return;
