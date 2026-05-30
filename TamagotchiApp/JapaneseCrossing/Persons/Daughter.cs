@@ -1,6 +1,6 @@
 ﻿using System.Drawing.Drawing2D;
 
-namespace TamagotchiApp.JapaneseCrossing
+namespace TamagotchiApp.JapaneseCrossing.Persons
 {
     public class Daughter : Person
     {

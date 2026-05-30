@@ -1,4 +1,6 @@
-﻿namespace TamagotchiApp.JapaneseCrossing
+﻿using TamagotchiApp.JapaneseCrossing.Persons;
+
+namespace TamagotchiApp.JapaneseCrossing
 {
     public class Game
     {
@@ -198,19 +200,19 @@
         {
             return new List<Person>
             {
-                new Police(100, 250, 910, 290),
+                new Police(100, 300, 1350, 350),
 
-                new Criminal(160, 250, 980, 250),
+                new Criminal(160, 300, 1450 , 380),
 
-                new Daughter(40, 270, 960, 300),
-                new Daughter(5, 300, 1000, 300),
+                new Mother(50, 420, 1130, 540),
 
-                new Mother(70, 300, 980, 340),
+                new Son(40, 500, 1330, 540),
+                new Son(0, 530, 1310, 580),
 
-                new Son(40, 350, 1030, 340),
-                new Son(5, 380, 1010, 380),
+                new Daughter(40, 570, 1260, 500),
+                new Daughter(5, 600, 1300, 500),
 
-                new Father(120, 300, 950, 360),
+                new Father(120, 420, 1250, 560),
             };
         }
 

@@ -1,6 +1,4 @@
-﻿using TamagotchiApp.JapaneseCrossing;
-
-namespace TamagotchiApp.JapaneseCrossing
+﻿namespace TamagotchiApp.JapaneseCrossing.Persons
 {
     public abstract class Person
     {
@@ -20,8 +18,8 @@ namespace TamagotchiApp.JapaneseCrossing
 
         public FacingDirection FacingDirection { get; private set; } = FacingDirection.Right;
 
-        public int Width { get; } = 100;
-        public int Height { get; } = 100;
+        public int Width { get; } = 200;
+        public int Height { get; } = 200;
 
         public abstract Bitmap Image { get; }
 

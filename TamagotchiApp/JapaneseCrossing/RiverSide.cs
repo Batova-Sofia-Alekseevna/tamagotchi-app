@@ -1,4 +1,6 @@
-﻿namespace TamagotchiApp.JapaneseCrossing
+﻿using TamagotchiApp.JapaneseCrossing.Persons;
+
+namespace TamagotchiApp.JapaneseCrossing
 {
     public class RiverSide
     {

@@ -12,6 +12,7 @@ namespace TamagotchiApp
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new StartupForm());
+            //Application.Run(new MiniGameForm());
         }
     }
 }

@@ -34,6 +34,9 @@
             toolTip1 = new ToolTip(components);
             buttonToRight = new Button();
             buttonToLeft = new Button();
+            btnRules = new Button();
+            btnHint = new Button();
+            btnRestart = new Button();
             SuspendLayout();
             // 
             // timer1
@@ -68,6 +71,36 @@
             buttonToLeft.UseVisualStyleBackColor = true;
             buttonToLeft.Click += ButtonToLeft_Click;
             // 
+            // btnRules
+            // 
+            btnRules.Location = new Point(1482, 12);
+            btnRules.Name = "btnRules";
+            btnRules.Size = new Size(150, 46);
+            btnRules.TabIndex = 3;
+            btnRules.Text = "Правила";
+            btnRules.UseVisualStyleBackColor = true;
+            btnRules.Click += ButtonRules_Click;
+            // 
+            // btnHint
+            // 
+            btnHint.Location = new Point(1482, 64);
+            btnHint.Name = "btnHint";
+            btnHint.Size = new Size(150, 46);
+            btnHint.TabIndex = 4;
+            btnHint.Text = "Подсказка";
+            btnHint.UseVisualStyleBackColor = true;
+            btnHint.Click += ButtonHint_Click;
+            // 
+            // btnRestart
+            // 
+            btnRestart.Location = new Point(1482, 116);
+            btnRestart.Name = "btnRestart";
+            btnRestart.Size = new Size(150, 46);
+            btnRestart.TabIndex = 5;
+            btnRestart.Text = "Заново";
+            btnRestart.UseVisualStyleBackColor = true;
+            btnRestart.Click += ButtonRestart_Click;
+            // 
             // MiniGameForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -75,6 +108,9 @@
             BackgroundImage = Properties.Resources.background;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1662, 983);
+            Controls.Add(btnRestart);
+            Controls.Add(btnHint);
+            Controls.Add(btnRules);
             Controls.Add(buttonToLeft);
             Controls.Add(buttonToRight);
             Controls.Add(textBoxProcess);
@@ -98,5 +134,8 @@
         private ToolTip toolTip1;
         private Button buttonToRight;
         private Button buttonToLeft;
+        private Button btnRules;
+        private Button btnHint;
+        private Button btnRestart;
     }
 }

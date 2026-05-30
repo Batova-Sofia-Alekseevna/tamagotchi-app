@@ -1,7 +1,7 @@
 ﻿using System.Drawing.Drawing2D;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace TamagotchiApp.JapaneseCrossing
+namespace TamagotchiApp.JapaneseCrossing.Persons
 {
     public class Police : Person
     {

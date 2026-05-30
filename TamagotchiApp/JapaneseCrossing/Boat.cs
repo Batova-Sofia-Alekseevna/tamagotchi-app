@@ -1,4 +1,6 @@
-﻿namespace TamagotchiApp.JapaneseCrossing
+﻿using TamagotchiApp.JapaneseCrossing.Persons;
+
+namespace TamagotchiApp.JapaneseCrossing
 {
     public class Boat
     {
@@ -16,9 +18,9 @@
 
         public int Y { get; }
 
-        public int Width { get; } = 260;  //ширина лодки
+        public int Width { get; } = 390;  //ширина лодки
 
-        public int Height { get; } = 140;  //высота 
+        public int Height { get; } = 210;  //высота 
 
         public int Right => X + Width; //право 
 
@@ -141,8 +143,8 @@
         {
             return seat switch
             {
-                BoatSeat.Left => new Point(X + 45, Y - 10),
-                BoatSeat.Right => new Point(X + 130, Y - 10),
+                BoatSeat.Left => new Point(X + 35, Y - 60),
+                BoatSeat.Right => new Point(X + 180, Y - 60),
 
                 _ => throw new ArgumentOutOfRangeException(nameof(seat))
             };
