@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using TamagotchiApp.Pets.Animals;
+﻿using TamagotchiApp.Pets.Animals;
 
 namespace TamagotchiApp
 {
@@ -41,8 +34,8 @@ namespace TamagotchiApp
             pbEnergy.Value = _pet.Energy.Value;
             pbHygiene.Value = _pet.Hygiene.Value;
 
-            // Каждые 1000 тиков возраст увеличиваем на 0,2
-            if (_tickCount % 1000 == 0)
+            // Каждые 70 тиков возраст увеличиваем на 1
+            if (_tickCount % 70 == 0)
             {
                 _pet.IncreaseAge();
                 lblNameAndAge.Text = _pet.ToString();
@@ -152,6 +145,8 @@ namespace TamagotchiApp
 
         private void BtnLearn_Click(object sender, EventArgs e)
         {
+            _pet.Discipline.IncreaseMax();
+            pbDiscipline.Value = _pet.Discipline.Value;
             var form = new MiniGameForm();
             form.ShowDialog();
         }

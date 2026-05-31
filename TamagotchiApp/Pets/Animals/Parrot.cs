@@ -1,8 +1,8 @@
 ﻿namespace TamagotchiApp.Pets.Animals
 {
-    public class Parrot(string name, double age) : Pet(name, age, PetConfigPresets.Parrot)
+    public class Parrot(string name, double age) : Pet(name, age, PetConfigPresets.Parrot)  //создание класса попугая, на основе Pet
     {
-        public override Dictionary<PetState, Image> Images => new()
+        public override Dictionary<PetState, Image> Images => new()  //словарь изображений
 {
   { PetState.Base,  Properties.Resources.parrot_base},
   { PetState.Sleeping, Properties.Resources.parrot_sleeping},
@@ -14,6 +14,6 @@
   { PetState.Enamored, Properties.Resources.parrot_enamored},
   { PetState.Sick, Properties.Resources.parrot_sick}
 };
-        public override PetType Type => PetType.Parrot;
+        public override PetType Type => PetType.Parrot;  // тип питомца
     }
 }

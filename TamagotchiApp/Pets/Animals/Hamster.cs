@@ -1,8 +1,8 @@
 ﻿namespace TamagotchiApp.Pets.Animals
 {
-    public class Hamster(string name, double age) : Pet(name, age, PetConfigPresets.Humster)
+    public class Hamster(string name, double age) : Pet(name, age, PetConfigPresets.Humster)   //создание класса хомяка, на основе Pet
     {
-        public override Dictionary<PetState, Image> Images => new()
+        public override Dictionary<PetState, Image> Images => new()  //словарь изображений
 {
   { PetState.Base,  Properties.Resources.hamster_base},
   { PetState.Sleeping, Properties.Resources.hamster_sleeping},
@@ -14,6 +14,6 @@
   { PetState.Enamored, Properties.Resources.hamster_enamored},
   { PetState.Sick, Properties.Resources.hamster_sick}
 };
-        public override PetType Type => PetType.Hamster;
+        public override PetType Type => PetType.Hamster;  // тип питомца
     }
 }

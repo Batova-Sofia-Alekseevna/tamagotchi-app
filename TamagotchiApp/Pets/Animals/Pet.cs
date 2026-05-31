@@ -88,12 +88,12 @@
         /// </summary>
         public void IncreaseAge()
         {
-            Age += 0.2;
+            Age += 1;
         }
 
         public override string ToString()
         {
-            return $"{Name}, {Age} лет";
+            return $"{Name}, {Age} месяца(-ев)";
         }
 
         /// <summary>

@@ -48,13 +48,13 @@
             pbDiscipline = new ProgressBar();
             pbHygiene = new ProgressBar();
             panel2 = new Panel();
+            btnLearn = new Button();
             btnFeed = new Button();
             btnPlay = new Button();
             btnStroke = new Button();
             btnHeal = new Button();
             btnClean = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
-            btnLearn = new Button();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -276,11 +276,21 @@
             panel2.Size = new Size(600, 757);
             panel2.TabIndex = 1;
             // 
+            // btnLearn
+            // 
+            btnLearn.Location = new Point(24, 664);
+            btnLearn.Name = "btnLearn";
+            btnLearn.Size = new Size(554, 80);
+            btnLearn.TabIndex = 5;
+            btnLearn.Text = "Учить";
+            btnLearn.UseVisualStyleBackColor = true;
+            btnLearn.Click += BtnLearn_Click;
+            // 
             // btnFeed
             // 
-            btnFeed.Location = new Point(24, 384);
+            btnFeed.Location = new Point(24, 538);
             btnFeed.Name = "btnFeed";
-            btnFeed.Size = new Size(554, 58);
+            btnFeed.Size = new Size(554, 80);
             btnFeed.TabIndex = 4;
             btnFeed.Text = "Кормить";
             btnFeed.UseVisualStyleBackColor = true;
@@ -288,9 +298,9 @@
             // 
             // btnPlay
             // 
-            btnPlay.Location = new Point(24, 291);
+            btnPlay.Location = new Point(24, 418);
             btnPlay.Name = "btnPlay";
-            btnPlay.Size = new Size(554, 58);
+            btnPlay.Size = new Size(554, 80);
             btnPlay.TabIndex = 3;
             btnPlay.Text = "Играть";
             btnPlay.UseVisualStyleBackColor = true;
@@ -298,9 +308,9 @@
             // 
             // btnStroke
             // 
-            btnStroke.Location = new Point(24, 198);
+            btnStroke.Location = new Point(24, 297);
             btnStroke.Name = "btnStroke";
-            btnStroke.Size = new Size(554, 58);
+            btnStroke.Size = new Size(554, 80);
             btnStroke.TabIndex = 2;
             btnStroke.Text = "Погладить";
             btnStroke.UseVisualStyleBackColor = true;
@@ -308,9 +318,9 @@
             // 
             // btnHeal
             // 
-            btnHeal.Location = new Point(24, 105);
+            btnHeal.Location = new Point(24, 176);
             btnHeal.Name = "btnHeal";
-            btnHeal.Size = new Size(554, 58);
+            btnHeal.Size = new Size(554, 80);
             btnHeal.TabIndex = 1;
             btnHeal.Text = "Лечить";
             btnHeal.UseVisualStyleBackColor = true;
@@ -318,9 +328,9 @@
             // 
             // btnClean
             // 
-            btnClean.Location = new Point(24, 12);
+            btnClean.Location = new Point(24, 63);
             btnClean.Name = "btnClean";
-            btnClean.Size = new Size(554, 58);
+            btnClean.Size = new Size(554, 80);
             btnClean.TabIndex = 0;
             btnClean.Text = "Навести порядок";
             btnClean.UseVisualStyleBackColor = true;
@@ -329,16 +339,6 @@
             // timer1
             // 
             timer1.Tick += Timer1_Tick;
-            // 
-            // btnLearn
-            // 
-            btnLearn.Location = new Point(24, 471);
-            btnLearn.Name = "btnLearn";
-            btnLearn.Size = new Size(554, 58);
-            btnLearn.TabIndex = 5;
-            btnLearn.Text = "Учить";
-            btnLearn.UseVisualStyleBackColor = true;
-            btnLearn.Click += BtnLearn_Click;
             // 
             // MainForm
             // 
