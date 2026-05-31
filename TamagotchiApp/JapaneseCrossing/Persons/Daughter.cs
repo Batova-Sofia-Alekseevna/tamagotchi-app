@@ -4,8 +4,8 @@ namespace TamagotchiApp.JapaneseCrossing.Persons
 {
     public class Daughter : Person
     {
-        public Daughter(int leftX, int leftY, int rightX, int rightY)
-            : base(leftX, leftY, rightX, rightY)
+        public Daughter(int leftX, int leftY, int rightX, int rightY)  //позиция на левом и правом берегу
+            : base(leftX, leftY, rightX, rightY) //передаем в конструктор базового класса
         {
         }
 
