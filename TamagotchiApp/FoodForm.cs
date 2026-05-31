@@ -1,4 +1,5 @@
 ﻿using TamagotchiApp.Pets;
+using TamagotchiApp.Pets.Animals;
 
 namespace TamagotchiApp
 {
@@ -10,7 +11,7 @@ namespace TamagotchiApp
 
         public FoodForm(Pet pet)
         {
-            InitializeComponent();
+            InitializeComponent();    //инициализация формы
             _pet = pet;
         }
 
@@ -47,7 +48,7 @@ namespace TamagotchiApp
             }
         }
 
-        private void BtnFood1_Click(object sender, EventArgs e)
+        private void BtnFood1_Click(object sender, EventArgs e)  //вызывает события, покормили питомца
         {
             Fed?.Invoke();
             Close();

@@ -5,11 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using TamagotchiApp.Pets;
+using TamagotchiApp.Pets.Animals;
 
 namespace TamagotchiApp
 {
-    public partial class MainForm : Form
+    public partial class MainForm : Form  
     {
         private readonly StartupForm _startupForm;
         private readonly Pet _pet;
@@ -49,7 +49,7 @@ namespace TamagotchiApp
             }
 
             // Каждые 300 тиков питомец может заболеть
-            if (_tickCount % 300 == 0)
+            if (_tickCount % 100 == 0)
             {
                 _pet.UpdateHealth();
                 pbHealth.Value = _pet.Health.Value;
@@ -59,7 +59,7 @@ namespace TamagotchiApp
             pbImage.BackgroundImage = _pet.Images[_pet.State];
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)  //загрузка формы
         {
             lblNameAndAge.Text = _pet.ToString();
             timer1.Start();
@@ -94,7 +94,7 @@ namespace TamagotchiApp
             pbHygiene.Value = _pet.Hygiene.Value;
         }
 
-        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)  //закрытие формы
         {
             _startupForm.Close();
         }

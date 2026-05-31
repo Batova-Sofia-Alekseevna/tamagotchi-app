@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TamagotchiApp.Pets
+﻿namespace TamagotchiApp.Pets
 {
-    public sealed class Stat
+    public sealed class Stat  //минимальные максимальные текущие и дельта питомцев
     {
         private int _value;
         private int _delta;

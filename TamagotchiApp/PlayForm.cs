@@ -1,4 +1,5 @@
 ﻿using TamagotchiApp.Pets;
+using TamagotchiApp.Pets.Animals;
 
 namespace TamagotchiApp
 {

@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using TamagotchiApp.Pets;
-using TamagotchiApp.Pets.Animals;
+﻿using TamagotchiApp.Pets.Animals;
 
 namespace TamagotchiApp
 {
-    public partial class SettingsForm : Form
+    public partial class SettingsForm : Form  
     {
         private readonly StartupForm _startupForm;
 
-        public SettingsForm(StartupForm startupForm)
+        public SettingsForm(StartupForm startupForm)   //конструктор формы
         {
             InitializeComponent();
             
@@ -36,7 +28,7 @@ namespace TamagotchiApp
             }
             else
             {
-                Pet pet = cbTypes.SelectedIndex switch
+                Pet pet = cbTypes.SelectedIndex switch  // какой питомец - создание объекта
                 {
                     0 => new Dog(txtName.Text, 0),
                     1 => new Cat(txtName.Text, 0),
@@ -45,7 +37,7 @@ namespace TamagotchiApp
                     _ => throw new NotImplementedException()
                 };
 
-                var form = new MainForm(pet, _startupForm);
+                var form = new MainForm(pet, _startupForm);  //передаем главную форму и Pet
                 form.Show();
                 Close();
             }

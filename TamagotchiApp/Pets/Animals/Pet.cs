@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using static System.Windows.Forms.AxHost;
-
-namespace TamagotchiApp.Pets
+﻿namespace TamagotchiApp.Pets.Animals
 {
     public abstract class Pet(string name, double age, PetConfig config)
     {
@@ -109,7 +104,7 @@ namespace TamagotchiApp.Pets
             var random = new Random();
             var maySick = random.NextDouble();
 
-            // Заболел
+            // заболел
             if (maySick > 0.6)
             {
                 var health = random.Next(0, (Health.Max - Health.Min) / 4);

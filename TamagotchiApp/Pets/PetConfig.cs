@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using static System.Windows.Forms.AxHost;
-
-namespace TamagotchiApp.Pets
+﻿namespace TamagotchiApp.Pets
 {
     /// <summary>
     /// Настройки питомца
